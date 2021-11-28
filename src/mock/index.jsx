@@ -1,3 +1,16 @@
+import Img1 from "../assets/images/design.png";
+import Img2 from "../assets/images/rabot-img2.png";
+import Img3 from "../assets/images/rabot-img3.png";
+import Img4 from "../assets/images/rabot-img4.png";
+import Img5 from "../assets/images/rabot-img5.png";
+import Img6 from "../assets/images/rabot-img6.png";
+import Img7 from "../assets/images/rabot-img7.png";
+import Img8 from "../assets/images/rabot-img8.png";
+import Img9 from "../assets/images/rabot-img9.png";
+import Img10 from "../assets/images/rabot-img10.png";
+import Img11 from "../assets/images/rabot-img11.png";
+import Img12 from "../assets/images/rabot-img12.png";
+
 export const HeaderData = [
   { id: 1, text: "cоздание имиджевых социальных и рекламных роликов " },
   { id: 2, text: "разработка PR-стратегии" },
@@ -20,6 +33,21 @@ export const CarouselData = [
   {
     id: 3,
     text: "яркий и заметный логотип хорошо смотрится на самых разных носителях",
+  },
+];
+
+export const StudioData = [
+  {
+    id: 1,
+    text: "Как креативно рассказать о вашей продукции или компании?",
+  },
+  {
+    id: 2,
+    text: "Как привлечь внимание общественности к социально-значимой проблеме?",
+  },
+  {
+    id: 3,
+    text: "Как выстроить эффективную стратегию коммуникаций?",
   },
 ];
 
@@ -68,5 +96,80 @@ export const ContactData = [
     id: 4,
     title: "Режим работы:",
     text: "понедельник-пятница, с 9:30 до 18:30",
+  },
+];
+
+export const OurWorksData = [
+  {
+    id: 1,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img1,
+  },
+  {
+    id: 2,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img2,
+  },
+  {
+    id: 3,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img3,
+  },
+  {
+    id: 4,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img4,
+  },
+  {
+    id: 5,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img5,
+  },
+  {
+    id: 5,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img6,
+  },
+  {
+    id: 7,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img7,
+  },
+  {
+    id: 8,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img8,
+  },
+  {
+    id: 9,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img9,
+  },
+  {
+    id: 10,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img10,
+  },
+  {
+    id: 11,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img11,
+  },
+  {
+    id: 12,
+    title: "RPI CAPITAL",
+    text: "логотип",
+    img: Img12,
   },
 ];

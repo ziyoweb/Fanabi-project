@@ -8,11 +8,10 @@ export const SidebarParent = styled.div`
   display: flex;
   position: fixed;
   top: 0;
-  /* left: 0; */
   left: ${({ changes }) => (!changes ? "-100%" : "0")};
-  z-index: 10;
+  z-index: 9999;
   opacity: (${(changes) => (!changes ? "0" : "1")});
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
 `;
 
 export const SidebarInside = styled.div`
@@ -28,9 +27,6 @@ export const SidebarWrap = styled.div`
   background-color: #222a32;
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
-
-  /* transform: (${({ changes }) =>
-    changes ? "translateX(-100%)" : "translateX(0%)"}); */
 `;
 
 SidebarWrap.Header = styled.div`

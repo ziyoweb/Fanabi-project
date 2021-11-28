@@ -158,8 +158,8 @@ export const PlayBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: ${(props) => (props.st ? "40px" : "50px")};
+  height: ${(props) => (props.st ? "40px" : "50px")};
   background-color: var(--main-color);
   border-radius: 50%;
   animation: ${animate} 2.5s linear infinite;

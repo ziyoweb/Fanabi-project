@@ -1,10 +1,12 @@
 import React from "react";
+import OurWorks from "../components/OurWorks";
+import { Wrapper } from "../components/OurWorks/style";
 
 const Нашиработы = () => {
   return (
-    <div>
-      <h1>Наши работы page</h1>
-    </div>
+    <Wrapper>
+      <OurWorks />
+    </Wrapper>
   );
 };
 
