@@ -34,6 +34,9 @@ const StudioAbout = () => {
                 />
 
                 <PlayWrap>
+                  <Span orr mr>
+                    наша команда
+                  </Span>
                   <PlayBtn
                     st
                     className="btn-primary"
@@ -41,9 +44,6 @@ const StudioAbout = () => {
                   >
                     <PlayBtn.Icon />
                   </PlayBtn>
-                  <Span orr mr>
-                    наша команда
-                  </Span>
                 </PlayWrap>
               </React.Fragment>
             </StudioBlock.Play>

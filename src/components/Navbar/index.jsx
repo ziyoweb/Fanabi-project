@@ -11,6 +11,7 @@ import {
   Burger,
   Languages,
   LogoImg,
+  activeStyle,
 } from "./style";
 import LogoBrand from "../../assets/images/logo.png";
 import Sidebar from "../Sidebar";
@@ -19,21 +20,21 @@ const Navbar = () => {
   const [change, setChange] = useState(false);
   const [lang, setLang] = useState(false);
 
-  const langu = ["Ру", "En"];
-  const [langText, setLangText] = useState(langu[0]);
+  const [langText, setLangText] = useState("Ру");
 
   const onToggle = () => {
     setChange(!change);
   };
 
-  const onLang = () => {
-    setLang(!lang);
+  const changeOne = () => {
+    setLangText("Ру");
   };
-  const changes = () => {
-    setLangText(langu[1]);
+
+  const changeTwo = () => {
+    setLangText("En");
   };
   return (
-    <Nav>
+    <Nav navStyle>
       <Sidebar change={change} onToggle={onToggle} />
 
       <div className="container">
@@ -43,17 +44,25 @@ const Navbar = () => {
           </Logo>
 
           <Links>
-            <Navitem to="/наши-работы">Наши работы</Navitem>
-            <Navitem to="/услуги_и_цены">Услуги и цены</Navitem>
-            <Navitem to="/о_студии">О студии</Navitem>
-            <Navitem to="/контакты">Контакты</Navitem>
+            <Navitem activeStyle={activeStyle} to="/наши-работы">
+              Наши работы
+            </Navitem>
+            <Navitem activeStyle={activeStyle} to="/услуги_и_цены">
+              Услуги и цены
+            </Navitem>
+            <Navitem activeStyle={activeStyle} to="/о_студии">
+              О студии
+            </Navitem>
+            <Navitem activeStyle={activeStyle} to="/контакты">
+              Контакты
+            </Navitem>
           </Links>
 
           <Socials>
-            <Socials.Link href="#">
+            <Socials.Link href="https://www.facebook.com/muhriddin.ziyodulloyev.5">
               <Socials.Icon1 />
             </Socials.Link>
-            <Socials.Link href="#">
+            <Socials.Link href="https://www.instagram.com/ziyodulloyevmuhriddin/">
               <Socials.Icon2 />
             </Socials.Link>
             <Socials.Link href="#">
@@ -67,14 +76,28 @@ const Navbar = () => {
           </PhoneNum>
 
           <Languages>
-            <Language onClick={onLang}>
+            <Language
+              onClick={() => {
+                {
+                  setLang(!lang);
+                  changeOne();
+                }
+              }}
+            >
               <Language.Text>{langText}</Language.Text>
               <Language.Icon />
             </Language>
 
             {lang && (
-              <Language.Other onClick={[onLang, changes]}>
-                <Language>
+              <Language.Other>
+                <Language
+                  onClick={() => {
+                    {
+                      setLang(!lang);
+                      changeTwo();
+                    }
+                  }}
+                >
                   <Language.Text>En</Language.Text>
                 </Language>
               </Language.Other>

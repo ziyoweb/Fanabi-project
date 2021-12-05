@@ -1,6 +1,5 @@
 import React from "react";
 import { StudioBody } from "../components/StudioAbout/style";
-import Footer from "../components/Footer";
 import StudioAbout from "../components/StudioAbout";
 
 const О_студии = () => {
@@ -9,7 +8,6 @@ const О_студии = () => {
       <StudioBody>
         <StudioAbout />
       </StudioBody>
-      <Footer />
     </>
   );
 };

@@ -11,7 +11,7 @@ export const OrderMediaTitle = styled.a`
   line-height: 128%;
   color: #615f5f;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 
   ::before {
     content: "";

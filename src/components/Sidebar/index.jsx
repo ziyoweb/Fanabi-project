@@ -24,16 +24,16 @@ const Sidebar = ({ change, onToggle }) => {
         <SidebarWrap.Body>
           <SidebarWrap.Title>Menyu</SidebarWrap.Title>
           <SidebarWrap.Link to="/наши-работы" onClick={onToggle}>
-            Bizning ishlar
+            Наши работы
           </SidebarWrap.Link>
           <SidebarWrap.Link to="/услуги_и_цены" onClick={onToggle}>
-            Xizmatlar va narxlar
+            Услуги и цены
           </SidebarWrap.Link>
           <SidebarWrap.Link to="/о_студии" onClick={onToggle}>
-            Biz haqimizda
+            О студии
           </SidebarWrap.Link>
           <SidebarWrap.Link to="/контакты" onClick={onToggle}>
-            Kontaktlar
+            Контакты
           </SidebarWrap.Link>
         </SidebarWrap.Body>
       </SidebarWrap>

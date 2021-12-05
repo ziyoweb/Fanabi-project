@@ -47,6 +47,23 @@ export const ContactSocialIcons = styled.div`
   flex-direction: column;
 `;
 
+export const ContactSocialLink = styled.a`
+  text-decoration: none;
+
+  :visited {
+    background-color: transparent;
+  }
+  :active {
+    background-color: transparent;
+  }
+  :focus {
+    background-color: transparent;
+  }
+  :hover {
+    background-color: transparent;
+  }
+`;
+
 ContactSocialIcons.Facebook = styled(facebookIconContact)`
   margin-bottom: 35px;
   cursor: pointer;

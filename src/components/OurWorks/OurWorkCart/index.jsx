@@ -1,16 +1,19 @@
 import React from "react";
 import { Card, Line } from "./style";
+import { Link } from "react-router-dom";
 
-const OurWorkCart = ({ value }) => {
+const OurWorkCart = (props) => {
   return (
-    <Card>
-      <Card.Img src={value.img} alt="" />
-      <Card.Main>
-        <Card.Title>{value.title}</Card.Title>
-        <Line />
-        <Card.Text>{value.text}</Card.Text>
-      </Card.Main>
-    </Card>
+    <Link to={`/наши-работы/${props.value.id}`}>
+      <Card>
+        <Card.Img src={props.value.img} alt="" />
+        <Card.Main>
+          <Card.Title>{props.value.title}</Card.Title>
+          <Line />
+          <Card.Text>{props.value.text}</Card.Text>
+        </Card.Main>
+      </Card>
+    </Link>
   );
 };
 

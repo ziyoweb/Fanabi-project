@@ -6,11 +6,11 @@ import PlayerImg from "../../assets/images/slidervideo.jpg";
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 140px 0 80px 0;
+  padding: 236px 0 80px 0;
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
     ),
     url(${headerBg});
   background-repeat: no-repeat;
@@ -18,10 +18,10 @@ export const Wrapper = styled.div`
   background-size: cover;
 
   @media (max-width: 646px) {
-    padding: 80px 0 80px 0;
+    padding: 200px 0 80px 0;
   }
   @media (max-width: 454px) {
-    padding: 60px 0 30px 0;
+    padding: 150px 0 30px 0;
   }
 `;
 
@@ -165,9 +165,9 @@ export const PlayBtn = styled.div`
   animation: ${animate} 2.5s linear infinite;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: ${({ st }) => (st ? "60%" : "50%")};
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  z-index: 1;
   :hover {
     cursor: pointer;
   }

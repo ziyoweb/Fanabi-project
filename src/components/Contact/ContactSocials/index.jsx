@@ -7,6 +7,7 @@ import {
   ContactTitle,
   ContactText,
   ContactSocialIcons,
+  ContactSocialLink,
 } from "./style";
 
 const ContactSocials = () => {
@@ -23,9 +24,15 @@ const ContactSocials = () => {
         })}
       </ContactInformation>
       <ContactSocialIcons>
-        <ContactSocialIcons.Facebook />
-        <ContactSocialIcons.Instagram />
-        <ContactSocialIcons.Twitter />
+        <ContactSocialLink href="https://www.facebook.com/muhriddin.ziyodulloyev.5">
+          <ContactSocialIcons.Facebook />
+        </ContactSocialLink>
+        <ContactSocialLink href="https://www.instagram.com/ziyodulloyevmuhriddin/">
+          <ContactSocialIcons.Instagram />
+        </ContactSocialLink>
+        <ContactSocialLink>
+          <ContactSocialIcons.Twitter />
+        </ContactSocialLink>
       </ContactSocialIcons>
     </ContactSocialsWrap>
   );

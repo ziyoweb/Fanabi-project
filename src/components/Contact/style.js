@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  margin-top: 150px;
+
+  @media (max-width: 450px) {
+    margin-top: 130px;
+  }
+`;
+
 export const ContactWrap = styled.div`
   margin-bottom: 90px;
 `;

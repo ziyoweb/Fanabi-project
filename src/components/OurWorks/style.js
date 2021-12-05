@@ -2,7 +2,12 @@ import styled from "styled-components";
 import Dots from "../../assets/images/dots.png";
 
 export const Wrapper = styled.div`
-  margin: 80px 0;
+  margin-top: 150px;
+  margin-bottom: 80px;
+
+  @media (max-width: 450px) {
+    margin-top: 130px;
+  }
 `;
 
 export const OurWorksHeader = styled.div`

@@ -6,6 +6,10 @@ export const Card = styled.div`
   overflow: hidden;
   position: relative;
   cursor: pointer;
+
+  @media (max-width: 450px) {
+    height: 230px;
+  }
 `;
 
 Card.Img = styled.img`

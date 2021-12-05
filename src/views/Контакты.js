@@ -1,13 +1,12 @@
 import React from "react";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import { Wrapper } from "../components/Contact/style";
 
 const Контакты = () => {
   return (
-    <div>
+    <Wrapper>
       <Contact title="Контакты" />
-      <Footer />
-    </div>
+    </Wrapper>
   );
 };
 

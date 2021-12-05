@@ -10,13 +10,16 @@ import { HiOutlineMenu } from "react-icons/hi";
 export const Nav = styled.div`
   width: 100%;
   background-color: var(--navbarBg-color);
-  padding: 30px 0;
+  padding: 25px 0;
   position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 `;
 
 export const Navitem = styled(NavLink)`
   color: #fff;
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -24,6 +27,7 @@ export const Navitem = styled(NavLink)`
   text-decoration: none;
   margin: 0 25px;
   transition: color 0.25s linear;
+  font-family: "Montserrat", sans-serif;
 
   :hover {
     color: var(--main-color);
@@ -36,6 +40,12 @@ export const Navitem = styled(NavLink)`
     display: none;
   }
 `;
+
+export const activeStyle = {
+  color: "var(--main-color)",
+  borderBottom: "4px solid var(--main-color)",
+  paddingBottom: "29px",
+};
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -82,6 +92,7 @@ const common = css`
     & path {
       fill: var(--main-color);
     }
+    transform: scale(1.1);
   }
 `;
 
